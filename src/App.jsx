@@ -153,6 +153,7 @@ function Nav({ navigate }) {
             </button>
           ))}
         </nav>
+        <button onClick={() => goTo('projects')} className="rounded-2xl border border-fuchsia-400/30 bg-gradient-to-r from-sky-500/10 via-violet-500/10 to-fuchsia-500/10 px-4 py-2 text-xs font-semibold text-zinc-100 shadow-[0_0_24px_-8px] shadow-fuchsia-500/30 hover:from-sky-500/20 hover:via-violet-500/20 hover:to-fuchsia-500/20">View Projects</button>
       </div>
     </header>
   )
@@ -166,7 +167,7 @@ function Hero() {
         Seeking 16‑Month PEY 2026
       </div>
       <h1 className="max-w-3xl text-5xl font-extrabold tracking-tight text-white md:text-6xl">Daniel Rolfe</h1>
-      <p className="max-w-none text-lg text-zinc-300 whitespace-nowrap overflow-x-auto">Computer Engineering Student @ UofT · <span className="bg-gradient-to-r from-sky-400 via-violet-500 to-fuchsia-500 bg-clip-text font-semibold text-transparent">Focused on AI/ML & Software Development</span></p>
+      <p className="max-w-3xl text-lg text-zinc-300">Computer Engineering Student @ UofT · <span className="bg-gradient-to-r from-sky-400 via-violet-500 to-fuchsia-500 bg-clip-text font-semibold text-transparent">Focused on AI/ML & Software Development</span></p>
     </section>
   )
 }
@@ -326,4 +327,3 @@ function GitHubIcon() {
     </svg>
   )
 }
-
