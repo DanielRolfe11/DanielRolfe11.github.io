@@ -221,8 +221,40 @@ function Timeline({ items }) {
   return (
     <ol className="relative border-l border-zinc-800 pl-6">
       {items.map((it, idx) => (
-        <li key={idx} className="mb-10 ml-4">
+        <li key={idx} className="relative mb-10 ml-4">
+          {/* dot */}
           <span className="absolute -left-[9px] mt-1 h-4 w-4 rounded-full bg-gradient-to-r from-sky-400 to-fuchsia-500 shadow-[0_0_24px_-6px] shadow-fuchsia-500/60" />
+
+          {/* faded logo (decorative) */}
+          {it.logo && (
+            <img
+              src={it.logo}
+              alt=""
+              aria-hidden
+              className={[
+                // position
+                'pointer-events-none select-none absolute right-2 top-2 md:right-4 md:top-2',
+                // size (override per-item with it.logoClass)
+                it.logoClass || 'h-16 md:h-20',
+                // vibe
+                'opacity-15 grayscale blur-[1px] md:blur-[0.5px] mix-blend-luminosity',
+                // keep it under text
+                '-z-10',
+              ].join(' ')}
+              style={{
+                // soft vignette so the logo fades out toward edges
+                WebkitMaskImage:
+                  'radial-gradient(60% 60% at 70% 40%, rgba(0,0,0,0.75) 60%, rgba(0,0,0,0) 100%)',
+                maskImage:
+                  'radial-gradient(60% 60% at 70% 40%, rgba(0,0,0,0.75) 60%, rgba(0,0,0,0) 100%)',
+                // very subtle rotation so it feels designed, not pasted
+                transform: 'rotate(-2deg)',
+                opacity: 0.12, // fallback if class doesn’t support 15%
+              }}
+            />
+          )}
+
+          {/* text */}
           <h3 className="text-xl font-semibold text-white">{it.role}</h3>
           <p className="text-sm text-zinc-400">{it.org} · {it.time}</p>
           <ul className="mt-3 space-y-2 text-zinc-300">
