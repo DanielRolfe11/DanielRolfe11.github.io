@@ -68,7 +68,7 @@ function Home({ navigate, hash }) {
       <Section id="experience" title="Experience">
         <Timeline
           items={[
-            { role: 'AI/Automation Engineering Intern — Product Development', org: 'Canadian Tire Corporation', time: 'May 2025 – Aug 2025 · Toronto, ON', bullets: ['Built AI automations for patent landscape expansion, prior‑art notebooks, and semantic analysis of customer reviews.', 'Shipped scraping + analytics tools to surface top products, auto‑generate spec tables, and drive an LLM chatbot interface.', 'Automated weekly review‑intel decks with AI insights; streamlined workflows ~1700 hours/yr (≈$250K OPEX).'] },
+            { role: 'AI/Automation Engineering Intern — Product Development', org: 'Canadian Tire Corporation', logo: '/logos/canadian-tire-logo-2.svg', time: 'May 2025 – Aug 2025 · Toronto, ON', bullets: ['Built AI automations for patent landscape expansion, prior‑art notebooks, and semantic analysis of customer reviews.', 'Shipped scraping + analytics tools to surface top products, auto‑generate spec tables, and drive an LLM chatbot interface.', 'Automated weekly review‑intel decks with AI insights; streamlined workflows ~1700 hours/yr (≈$250K OPEX).'] },
             { role: 'Machine Learning Drylab Researcher', org: 'iGEM Toronto', time: 'Feb 2025 – Present · Toronto, ON', bullets: ['Implemented an ESM‑3 guided generation loop to propose protein sequences toward desired binding properties.', 'Integrated Boltz‑2 energy scoring to filter for stable, likely‑to‑bind candidates prior to synthesis.', 'Accelerated in‑silico design cycles for targeted phage therapies.'] },
             { 
               role: 'ML Neurotech Developer', 
