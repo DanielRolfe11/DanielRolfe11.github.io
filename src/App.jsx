@@ -186,7 +186,7 @@ function Hero() {
         Seeking 16‑Month PEY 2026
       </div>
       <h1 className="max-w-3xl text-5xl font-extrabold tracking-tight text-white md:text-6xl">Daniel Rolfe</h1>
-      <p className="max-w-3xl text-lg text-zinc-300">Computer Engineering Student @ UofT · <span className="bg-gradient-to-r from-sky-400 via-violet-500 to-fuchsia-500 bg-clip-text font-semibold text-transparent">Focused on AI/ML & Software Development</span></p>
+      <p className="max-w-3xl text-lg text-zinc-300">3rd Year Computer Engineering Student @ UofT · <span className="bg-gradient-to-r from-sky-400 via-violet-500 to-fuchsia-500 bg-clip-text font-semibold text-transparent">Focused on AI/ML & Software Development</span></p>
     </section>
   )
 }
