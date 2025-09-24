@@ -61,9 +61,7 @@ function Home({ navigate, hash }) {
           groups={{
             Programming: ['Python', 'C/C++', 'Java', 'JavaScript', 'SQL', 'Bash/Shell', 'Git', 'GitHub'],
             'AI/ML': ['PyTorch', 'TensorFlow', 'Transformers', 'NumPy', 'Pandas', 'SpaCy', 'Hugging Face'],
-            'Web & DB': ['React', 'Flask', 'MongoDB'],
-            Spoken: ['English', 'French'],
-            "Business & Tools": ["Excel", "Figma", "LaTeX", "Dashboarding & Reporting"]
+            'Web & DB': ['React', 'Flask', 'MongoDB']
           }}
         />
       </Section>
@@ -72,6 +70,26 @@ function Home({ navigate, hash }) {
           items={[
             { role: 'AI/Automation Engineering Intern — Product Development', org: 'Canadian Tire Corporation', time: 'May 2025 – Aug 2025 · Toronto, ON', bullets: ['Built AI automations for patent landscape expansion, prior‑art notebooks, and semantic analysis of customer reviews.', 'Shipped scraping + analytics tools to surface top products, auto‑generate spec tables, and drive an LLM chatbot interface.', 'Automated weekly review‑intel decks with AI insights; streamlined workflows ~1700 hours/yr (≈$250K OPEX).'] },
             { role: 'Machine Learning Drylab Researcher', org: 'iGEM Toronto', time: 'Feb 2025 – Present · Toronto, ON', bullets: ['Implemented an ESM‑3 guided generation loop to propose protein sequences toward desired binding properties.', 'Integrated Boltz‑2 energy scoring to filter for stable, likely‑to‑bind candidates prior to synthesis.', 'Accelerated in‑silico design cycles for targeted phage therapies.'] },
+            { 
+              role: 'ML Neurotech Developer', 
+              org: 'UTMIST (UofT Machine Intelligence Student Team)', 
+              time: 'Sep 2025 – Present · Toronto, ON', 
+              bullets: [
+                'Working on a collaborative project with NeurotechUofT to design machine learning methods for post-stroke rehabilitation support.',
+                'Contributing to early development of signal preprocessing and model exploration to interpret patient motor intent from wearable devices.',
+                'Supporting integration of ML components into a prototype system aimed at assisting finger-specific motor recovery.'
+              ] 
+            },
+            { 
+              role: 'Independent Data Analyst', 
+              org: 'UTSPAN (UofT Sports Analytics Student Group)', 
+              time: 'Sep 2023 – Present · Toronto, ON', 
+              bullets: [
+                'Research and gather open-source sports data (e.g., play-by-play, box score, tracking) from public APIs and repositories; document sources, normalize schemas (teams/players/time), handle missing/outlier events, and maintain reproducible ingestion scripts with versioned datasets',
+                'Build and evaluate regression and ML models (linear and regularized regression, gradient-boosted trees, and simple neural nets) to predict player and game outcomes, tune with cross-validation, and compare to strong baselines using MAE, RMSE, and log-loss.',
+                'Utilize libraries, such as Pandas and Matplotlib, to create algorithm-driven visualizations for data analysis.'
+              ] 
+            },
             { role: 'Graphics Director', org: 'IEEE UofT Student Branch', time: 'Oct 2023 – Present · Toronto, ON', bullets: ['Led brand system and visuals across events and outreach; established consistent design language.'] }
           ]}
         />
