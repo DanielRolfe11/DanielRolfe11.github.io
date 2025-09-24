@@ -59,10 +59,11 @@ function Home({ navigate, hash }) {
       <Section id="skills" title="Skills">
         <BadgeGrid
           groups={{
-            Programming: ['Python', 'C/C++', 'Java', 'JavaScript', 'Bash/Shell'],
-            'AI/ML': ['PyTorch', 'TensorFlow', 'Transformers', 'NumPy', 'Pandas', 'SpaCy'],
+            Programming: ['Python', 'C/C++', 'Java', 'JavaScript', 'SQL', 'Bash/Shell', 'Git', 'GitHub'],
+            'AI/ML': ['PyTorch', 'TensorFlow', 'Transformers', 'NumPy', 'Pandas', 'SpaCy', 'Hugging Face'],
             'Web & DB': ['React', 'Flask', 'MongoDB'],
-            Spoken: ['English', 'French']
+            Spoken: ['English', 'French'],
+            "Business & Tools": ["Excel", "Figma", "LaTeX", "Dashboarding & Reporting"]
           }}
         />
       </Section>
